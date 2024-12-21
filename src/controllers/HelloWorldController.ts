@@ -14,7 +14,7 @@ import {
   CookieParam,
 } from "routing-controllers";
 import "reflect-metadata";
-import { Tag } from ".././Tag";
+import { Tag } from "../models/Tag";
 
 class HelloWorldPost {
   message: string;

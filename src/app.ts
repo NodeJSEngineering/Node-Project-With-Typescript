@@ -2,7 +2,7 @@ import express from 'express';
 import {cpu} from 'node-os-utils';
 import { plainToClass } from 'class-transformer';
 import { Request, Response } from 'express';
-import { UserDTO } from './userdto';
+import { UserDTO } from './dtos/userdto';
 
 const app = express();
 const port = 3000;
@@ -27,17 +27,15 @@ app.get('/', (req, res) => {
   console.log('hi');
 cpu.usage()
   .then(info => {
-    console.log(info)
+    console.log(info, 'info')
   })
   res.send('Hello w!');
 });
 
-
-app.post('/users', async (req: Request, res: Response) => {
-  const userDTO = plainToClass(UserDTO, req.body, { excludeExtraneousValues: true });
-
   // Create user in database...
-});
+// app.post('/users', async (req: Request, res: Response) => {
+//   const userDTO = plainToClass(UserDTO, req.body, { excludeExtraneousValues: true });
+// });
 
 // app.get('/users/:id', async (req, res) => {
 //   const id = req.params.id;

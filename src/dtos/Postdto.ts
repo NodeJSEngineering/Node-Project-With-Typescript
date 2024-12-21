@@ -9,7 +9,7 @@ import {
     MaxLength,
     ValidateNested
 } from 'class-validator';
-import { Tag } from './Tag';
+import { Tag } from '../models/Tag';
 
 
 export class Post {

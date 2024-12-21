@@ -20,7 +20,6 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 
 
 ### About the app
-Simple WorldMap app to find countries. 
 
 ### useful commands to run project
 - npm run start
@@ -42,6 +41,8 @@ Simple WorldMap app to find countries.
 - npm i  -D @types/express @types/body-parser @types/multer @types/node nodemon cross-env tsconfig-paths tslib  --legacy-peer-deps
 - npm install swagger-jsdoc --save
 - npm install swagger-ui-express --save
+npm init
+npm i @trpc/server fastify fastify-cors zod
 
 ### Useful Links
 - [http://localhost:3000](http://localhost:3000)  

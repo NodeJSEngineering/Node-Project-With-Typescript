@@ -7,7 +7,7 @@ import {specs} from '../swagger_configuration'
 
 console.info(`Starting server on http://localhost:${PORT}`);
 
-const routes = [ HelloWorldController ]; // we will be adding more here soon.
+// const routes = [ HelloWorldController ]; // we will be adding more here soon.
 
 
 const app = createExpressServer(

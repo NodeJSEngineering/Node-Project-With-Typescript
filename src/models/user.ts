@@ -1,5 +1,5 @@
 import { classToPlain, plainToClass } from 'class-transformer';
-import { UserDTO } from './userdto';
+import { UserDTO } from './dtos/userdto';
 
 const user = {
   firstName: 'John',
@@ -11,7 +11,7 @@ const user = {
 };
 
 const userDTO = plainToClass(UserDTO, user, { excludeExtraneousValues: true });
-console.log(userDTO);
+// console.log(userDTO);
 
 
 const userDTO1 = new UserDTO();
@@ -21,4 +21,4 @@ userDTO1.email = 'johndoe@example.com';
 userDTO1.age = 30;
 
 const user1 = classToPlain(userDTO);
-console.log(user1);
+// console.log(user1);
